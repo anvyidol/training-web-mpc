@@ -6,53 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
-
-    <!-- 23/02/2023 -->
-    <div class="wrapper">
-        <div class="head">
-            <div class="head__left">
-                <div class="head__left-avt">
-                    <img src="./img/story.png" alt="">
+    <div class="app">
+        <div class="box">
+            <div class="box__head">
+                <h4 class="box__title">
+                    Xúc xắc ma thuật
+                </h4>
+                <div class="box__ratio">
+                    0 / 0
                 </div>
-                <div class="head__left-info">
-                    <div class="head__left-name">Hồ Quang Văn</div>
-                    <div class="head__left-time">1 giờ</div>
+                <div class="box__score">
+                    Điểm: 0
                 </div>
             </div>
-            <div class="head__right">
-                <i class="fa-solid fa-ellipsis"></i>
-                <ul class="sub-menu">
-                    <li class="item">
-                        <i class="fa-regular fa-user"></i>
-                        Item 1
-                    </li>
-                    <li class="item">
-                        <i class="fa-regular fa-user"></i>
-                        Item 2
-                    </li>
-                    <li class="item">
-                        <i class="fa-regular fa-user"></i>
-                        Item 3
-                    </li>
-                </ul>
+            <div class="box__body">
+                <div class="box__dices">
+                    <div class="box__dice">
+                        <img src="./assets/img/1.png" alt="dice-1">
+                    </div>
+                    <div class="box__dice">
+                        <img src="./assets/img/2.png" alt="dice-2">
+                    </div>
+                    <div class="box__dice">
+                        <img src="./assets/img/3.png" alt="dice-3">
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="body">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quasi modi! Vitae laboriosam
-                provident ullam. Veritatis provident corrupti aliquid quia doloribus numquam, ipsam consectetur maiores
-                aliquam neque modi soluta ipsum!</p>
-        </div>
-        <div class="img">
-            <img src="./img/story.png" alt="">
+            <div class="box__action">
+                <div class="box__group-input">
+                    <label class="label-input__guess" for="inp-guess">Đoán: </label>
+                    <input type="number" min="3" max="18" id="inp-guess" class="input-guess">
+                </div>
+                <button type="button" class="btn box__btn-submit">Lắc</button>
+            </div>
         </div>
     </div>
+    <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
